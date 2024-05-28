@@ -9,7 +9,7 @@ class Drop:
         self.wind_intensity = wind_intensity
         self.rain_intensity = rain_intensity
         self.length = lenght
-        self.x = randint(0, self.screen.get_width())
+        self.x = randint(-self.screen.get_width(), self.screen.get_width())
         self.y = randint(-self.screen.get_height(), 0)
         self.falling = True
         

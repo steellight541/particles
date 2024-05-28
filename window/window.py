@@ -42,7 +42,6 @@ class Window:
                 self.selected_mode = (self.selected_mode + 1) % len(self.modes)
             case pygame.K_RETURN:
                 self.mode = list(self.modes.keys())[self.selected_mode]
-                self.modes[self.mode].get_drops()
                 pygame.display.set_caption(self.mode)
             case pygame.K_BACKSPACE:
                 self.modes[list(self.modes.keys())[self.selected_mode]].reset()
